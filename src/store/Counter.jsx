@@ -13,7 +13,7 @@ const Counter = () => {
         <button className=' border border-black-300 px-2 bg-slate-900 text-white' onClick={()=>dispatch(increase())}>+</button>
         <button className='border border-black-300 px-2 bg-slate-900 text-white' onClick={()=>dispatch(decrease())}>-</button>
         </div>
-        <input className='border border-black-700' type="number" onChange={(e)=>setAmount(parseInt(e.target.value))} />
+        <input className='border border-black-700 w-[50px] h-[50px]' type="number" onChange={(e)=>setAmount(parseInt(e.target.value))} />
         <div className='flex gap-5'>
         <button className='border border-black-300 p-1 bg-slate-900 text-white' onClick={()=>dispatch(incrementByAmount(amount))}>ByAmount</button>
         <button className='border border-black-300 p-1 bg-slate-900 text-white' onClick={()=>dispatch(reset())}>Reset</button>
